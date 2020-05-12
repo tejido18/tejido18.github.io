@@ -1,0 +1,52 @@
+body {
+	background: #667db6;
+	background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+	color: #FFF;
+	font-family: Calibri, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+ a {
+	 color:white;
+	 text-decoration-line: underline;
+ }
+
+body header {
+	background: rgba(0, 0, 0, .4);
+	color: #FFF;
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+}
+
+header h2 {
+	margin: 0;
+}
+
+footer {
+	background: rgba(0, 0, 0, .4); 
+	color: #FFF;
+	padding: 1em;
+    text-align: center;
+}
+
+footer>div p {
+	margin: 0;
+	padding: 0;
+}
+
+.result {
+	font-size: 1.7em;
+}
+
+ .validations {
+	display: inline-flex;
+    padding: 1em;
+    text-align: center;
+ }
+ 
+ .validations a {
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0);
+ }

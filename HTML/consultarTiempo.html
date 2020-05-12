@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <meta name="autor" content="Alvaro Tejido Jardon">
+    
+    <title>Consultar Tiempo</title>    
+    
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scriptTiempo.js"></script>
+	<script>
+		function buscarTiempo(){
+			var x = document.getElementById("mySel").value;
+			var meteo = new Meteo(x);
+			meteo.verJSON();
+		}
+	</script>
+    
+</head>
+
+<body>
+    <section>
+		<h1>Consultar Tiempo</h1> 
+		<nav>
+			<ul>
+				<li><a href="index.html">Página principal</a></li>
+				<li><a href="mapa.html">Mapa</a></li>
+				<li><a href="descargarBD.html">Descargar BD</a></li>
+				<li><a href="historia.html">Historia</a></li>
+				<li><a href="cultivo.html">Cultivo</a></li>
+				<li><a href="cbd.html">Cbd</a></li>
+				<li><a href="consultarTiempo.html">Consultar el tiempo</a></li>
+			</ul>
+		</nav>
+			<p>En esta pestaña se podrá consultar el tiempo en directo de las 3 ciudades de Asturias.</p>
+			<main>
+				<p> Ciudad a elegir: 
+					<select id="mySel">
+						<option selected value="Oviedo">Oviedo</option>
+						<option value="Gijon">Gijon</option>
+						<option value="Aviles">Aviles</option>
+					</select>
+					<a href="consultarTiempo.html">Elegir otra ciudad</a>
+				</p>
+				<p>
+					<input type="button" id="buttonTiempo" value="Cargar Datos" onClick="buscarTiempo()"/>
+				</p>
+			</main>
+    </section>
+        
+    <footer>
+      <a href="https://validator.w3.org/check?uri=referer"><img
+          src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+          alt="HTML5 Válido" title="HTML5 Válido" height="64" width="63" /></a>
+        
+        
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+
+        
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!ELEMENT cepas (cepa+)>
+<!ELEMENT cepa (sabor, aroma, efectos, potencia, calificacion)>
+<!ELEMENT sabor (#PCDATA)>
+<!ELEMENT tiempoDuracion (#PCDATA)>
+<!ELEMENT aroma (#PCDATA)>
+<!ELEMENT efectos (positivos, negativos)>
+<!ELEMENT positivos (efecto+)>
+<!ELEMENT negativos (efecto+)>
+<!ELEMENT efecto (#PCDATA)>
+<!ELEMENT potencia (tipo, porcentaje)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT porcentaje (#PCDATA)>
+<!ELEMENT calificacion (#PCDATA)>
+<!ATTLIST cepa 
+    nombre CDATA #REQUIRED>

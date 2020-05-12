@@ -1,0 +1,46 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="cepas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cepa" maxOccurs="unbounded" minOccurs="5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="sabor"/>
+              <xs:element type="xs:string" name="aroma"/>
+              <xs:element name="efectos">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="positivos">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="efecto" maxOccurs="5" minOccurs="1"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="negativos">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="efecto" maxOccurs="5" minOccurs="1"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="potencia">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="tipo"/>
+                    <xs:element type="xs:string" name="porcentaje"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:double" name="calificacion"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="nombre" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

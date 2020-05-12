@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cepas.xsl"?>
+<!DOCTYPE cepas SYSTEM "cepas.dtd">
+
+<cepas>
+    
+	<cepa nombre="Sour Diesel">
+		<sabor>Ligeramente a tierra con toques de diesel.</sabor>
+		<aroma>Fuerte aroma cítrico con mezcla de diesel.</aroma>
+		<efectos>
+			<positivos>
+				<efecto>Felicidad 62%</efecto>
+				<efecto>Euforia 53%</efecto>
+				<efecto>Energía 49%</efecto>
+				<efecto>Creatividad 43%</efecto>
+			</positivos>
+			<negativos>
+				<efecto>Boca seca 35%</efecto>
+				<efecto>Ojos rojos 19%</efecto>
+				<efecto>Paranoia 10%</efecto>
+				<efecto>Mareos 8%</efecto>
+			</negativos>
+		</efectos>
+		<potencia>
+			<tipo>Sativa</tipo>
+			<porcentaje>THC 19%</porcentaje>
+		</potencia>
+		<calificacion>9</calificacion>
+	</cepa>
+	
+	<cepa nombre="Amnesia Haze">
+		<sabor>Muy cítrico con toques dulces.</sabor>
+		<aroma>Suave aroma cítrico.</aroma>
+		<efectos>
+			<positivos>
+				<efecto>Felicidad 69%</efecto>
+				<efecto>Euforia 63%</efecto>
+				<efecto>Energía 44%</efecto>
+				<efecto>Creatividad 44%</efecto>
+			</positivos>
+			<negativos>
+				<efecto>Boca seca 41%</efecto>
+				<efecto>Ojos rojos 22%</efecto>
+				<efecto>Paranoia 15%</efecto>
+				<efecto>Mareos 13%</efecto>
+			</negativos>
+		</efectos>
+		<potencia>
+			<tipo>Sativa</tipo>
+			<porcentaje>THC 19,5%</porcentaje>
+		</potencia>
+		<calificacion>9.5</calificacion>
+	</cepa>
+	
+	<cepa nombre="Super Silver Haze">
+		<sabor>Sabor a pimienta mezclado con cítricos.</sabor>
+		<aroma>Olor ciítrico a limón, pero con un toque de pimienta.</aroma>
+		<efectos>
+			<positivos>
+				<efecto>Felicidad 60%</efecto>
+				<efecto>Euforia 56%</efecto>
+				<efecto>Energía 51%</efecto>
+				<efecto>Creatividad 44%</efecto>
+			</positivos>
+			<negativos>
+				<efecto>Boca seca 30%</efecto>
+				<efecto>Ojos rojos 18%</efecto>
+				<efecto>Paranoia 9%</efecto>
+				<efecto>Mareos 9%</efecto>
+			</negativos>
+		</efectos>
+		<potencia>
+			<tipo>Sativa</tipo>
+			<porcentaje>THC 18,5%</porcentaje>
+		</potencia>
+		<calificacion>8</calificacion>
+	</cepa>
+	
+	<cepa nombre="Northern Lights">
+		<sabor>Uno de los sabores mas típicos, puro sabor herbal.</sabor>
+		<aroma>Penetrante olor cítrico.</aroma>
+		<efectos>
+			<positivos>
+				<efecto>Relajación 63%</efecto>
+				<efecto>Felicidad 52%</efecto>
+				<efecto>Euforia 50%</efecto>
+				<efecto>Ganas de dormir 42%</efecto>
+				
+			</positivos>
+			<negativos>
+				<efecto>Boca seca 34%</efecto>
+				<efecto>Ojos rojos 17%</efecto>
+				<efecto>Mareos 8%</efecto>
+				<efecto>Paranoia 5%</efecto>
+			</negativos>
+		</efectos>
+		<potencia>
+			<tipo>Indica</tipo>
+			<porcentaje>THC 16,5%</porcentaje>
+		</potencia>
+		<calificacion>9.3</calificacion>
+	</cepa>
+	
+	<cepa nombre="Blueberry Cheesecake">
+		<sabor>Uno de los sabores mas selectos, con toques dulces.</sabor>
+		<aroma>Olor a naranja dulce.</aroma>
+		<efectos>
+			<positivos>
+				<efecto>Felicidad 59%</efecto>
+				<efecto>Relajación 58%</efecto>
+				<efecto>Euforia 46%</efecto>
+				<efecto>Creatividad 34%</efecto>
+				
+			</positivos>
+			<negativos>
+				<efecto>Boca seca 26%</efecto>
+				<efecto>Ojos rojos 12%</efecto>
+				<efecto>Mareos 8%</efecto>
+				<efecto>Paranoia 7%</efecto>
+			</negativos>
+		</efectos>
+		<potencia>
+			<tipo>Híbrida</tipo>
+			<porcentaje>THC 18,5%</porcentaje>
+		</potencia>
+		<calificacion>8.5</calificacion>
+	</cepa>
+
+	<cepa nombre="Critical Plus">
+		<sabor>Sabor muy estandar, cítrico.</sabor>
+		<aroma>Olor cítrico.</aroma>
+		<efectos>
+			<positivos>
+				<efecto>Relajación 70%</efecto>
+				<efecto>Felicidad 59%</efecto>
+				<efecto>Creatividad 46%</efecto>
+				<efecto>Euforia 34%</efecto>
+				
+			</positivos>
+			<negativos>
+				<efecto>Boca seca 19%</efecto>
+				<efecto>Ojos rojos 9%</efecto>
+				<efecto>Paranoia 7%</efecto>
+				<efecto>Dolor de cabeza 5%</efecto>
+			</negativos>
+		</efectos>
+		<potencia>
+			<tipo>Híbrida</tipo>
+			<porcentaje>THC 18%</porcentaje>
+		</potencia>
+		<calificacion>7.5</calificacion>
+	</cepa>
+</cepas>
