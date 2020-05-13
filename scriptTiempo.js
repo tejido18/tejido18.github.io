@@ -5,8 +5,8 @@ class Meteo {
         this.codigoPais = "ES";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
-        this.correcto = "¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.correcto = "¡Todo correcto! JSON recibido de <a href='https://openweathermap.org'>OpenWeatherMap</a>"
     }
     cargarDatos() {
         $.ajax({
@@ -56,7 +56,7 @@ class Meteo {
 					stringDatos += "<li>Visibilidad: " + localStorage.getItem('visibility') + " metros</li>";
 					stringDatos += "<li>Nubosidad: " + localStorage.getItem('clouds') + " %</li></ul>";
 					var icon = localStorage.getItem('icon');
-					var urlIcon = "http://openweathermap.org/img/w/" + icon + ".png";
+					var urlIcon = "https://openweathermap.org/img/w/" + icon + ".png";
 					stringDatos += '<img src="' + urlIcon + '"/>';
 
 					$("main").append('<p>' + stringDatos + '</p>');
@@ -80,7 +80,7 @@ class Meteo {
 					stringDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
 					stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li></ul>";
 					var icon = datos.weather[0].icon;
-					var urlIcon = "http://openweathermap.org/img/w/" + icon + ".png";
+					var urlIcon = "https://openweathermap.org/img/w/" + icon + ".png";
 					stringDatos += '<img src="' + urlIcon + '"/>';
 					
 					$("main").append('<p>' + stringDatos + '</p>');
@@ -88,7 +88,7 @@ class Meteo {
 				
             },
             error: function () {
-                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
+                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='https://openweathermap.org'>OpenWeatherMap</a>");
                 $("h4").remove();
                 $("pre").remove();
                 $("p").remove();
