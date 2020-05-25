@@ -32,36 +32,7 @@ class Meteo {
 
                 var infoWindow = new google.maps.InfoWindow;
 				
-				var marker1 = new google.maps.Marker({
-							position: {lat: 43.542194, lng: -5.676875},
-							map: mapaGeoposicionado,
-							title: 'Asociación JuanaMary'
-						});
-				var marker2 = new google.maps.Marker({
-							position: {lat: 43.371350, lng: -8.396000},
-							map: mapaGeoposicionado,
-							title: 'Asociacion PeñaGuay'
-						});
-				var marker3 = new google.maps.Marker({
-							position: {lat: 43.2627106, lng: -2.9252801},
-							map: mapaGeoposicionado,
-							title: 'Asociacion Santa Maria'
-						});
-				var marker4 = new google.maps.Marker({
-							position: {lat: 41.3887901, lng: 2.1589899},
-							map: mapaGeoposicionado,
-							title: 'Asociacion BuenRollo'
-						});
-				var marker5 = new google.maps.Marker({
-							position: {lat: 40.4165000, lng: -3.7025600},
-							map: mapaGeoposicionado,
-							title: 'Asociacion SantaSalut'
-						});
-				var marker6 = new google.maps.Marker({
-							position: {lat: 37.9870400, lng: -1.1300400},
-							map: mapaGeoposicionado,
-							title: 'Asociacion TodasSonInventadas'
-						});
+				var aux = new Aux(mapaGeoposicionado);
 				
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function (position) {
@@ -89,6 +60,46 @@ class Meteo {
         });
     }
 
+}
+
+class Aux{
+	constructor(mapa){
+		this.mapaGeoposicionado=mapa;
+		this.ponerMarkers(this.mapaGeoposicionado);
+	}
+	
+	ponerMarkers(mapaGeoposicionado){
+		var marker1 = new google.maps.Marker({
+							position: {lat: 43.542194, lng: -5.676875},
+							map: this.mapaGeoposicionado,
+							title: 'Asociación JuanaMary'
+						});
+				var marker2 = new google.maps.Marker({
+							position: {lat: 43.371350, lng: -8.396000},
+							map: this.mapaGeoposicionado,
+							title: 'Asociacion PeñaGuay'
+						});
+				var marker3 = new google.maps.Marker({
+							position: {lat: 43.2627106, lng: -2.9252801},
+							map: this.mapaGeoposicionado,
+							title: 'Asociacion Santa Maria'
+						});
+				var marker4 = new google.maps.Marker({
+							position: {lat: 41.3887901, lng: 2.1589899},
+							map: this.mapaGeoposicionado,
+							title: 'Asociacion BuenRollo'
+						});
+				var marker5 = new google.maps.Marker({
+							position: {lat: 40.4165000, lng: -3.7025600},
+							map: this.mapaGeoposicionado,
+							title: 'Asociacion SantaSalut'
+						});
+				var marker6 = new google.maps.Marker({
+							position: {lat: 37.9870400, lng: -1.1300400},
+							map: this.mapaGeoposicionado,
+							title: 'Asociacion TodasSonInventadas'
+						});
+}
 }
 
 var meteo = new Meteo("Oviedo");
